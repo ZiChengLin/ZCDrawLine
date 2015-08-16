@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)doBtn1:(id)sender;
+
+- (IBAction)doBtn2:(id)sender;
+
+- (IBAction)doBtn3:(id)sender;
 
 @end
 

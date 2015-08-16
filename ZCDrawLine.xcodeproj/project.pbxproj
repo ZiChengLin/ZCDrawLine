@@ -14,6 +14,9 @@
 		3E61B3A91B461740004800EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E61B3A81B461740004800EB /* Images.xcassets */; };
 		3E61B3AC1B461740004800EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E61B3AA1B461740004800EB /* LaunchScreen.xib */; };
 		3E61B3B81B461740004800EB /* ZCDrawLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E61B3B71B461740004800EB /* ZCDrawLineTests.m */; };
+		3E61B3C21B4618DD004800EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E61B3C11B4618DD004800EB /* CoreLocation.framework */; };
+		3E61B3C41B4618E8004800EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E61B3C31B4618E8004800EB /* MapKit.framework */; };
+		3E61B3C71B461F5E004800EB /* ZCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E61B3C61B461F5E004800EB /* ZCAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		3E61B3B11B461740004800EB /* ZCDrawLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCDrawLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E61B3B61B461740004800EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E61B3B71B461740004800EB /* ZCDrawLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCDrawLineTests.m; sourceTree = "<group>"; };
+		3E61B3C11B4618DD004800EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3E61B3C31B4618E8004800EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3E61B3C51B461F5E004800EB /* ZCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAnnotation.h; sourceTree = "<group>"; };
+		3E61B3C61B461F5E004800EB /* ZCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E61B3C41B4618E8004800EB /* MapKit.framework in Frameworks */,
+				3E61B3C21B4618DD004800EB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		3E61B38F1B461740004800EB = {
 			isa = PBXGroup;
 			children = (
+				3E61B3C31B4618E8004800EB /* MapKit.framework */,
+				3E61B3C11B4618DD004800EB /* CoreLocation.framework */,
 				3E61B39A1B461740004800EB /* ZCDrawLine */,
 				3E61B3B41B461740004800EB /* ZCDrawLineTests */,
 				3E61B3991B461740004800EB /* Products */,
@@ -85,6 +96,8 @@
 				3E61B3A01B461740004800EB /* AppDelegate.m */,
 				3E61B3A21B461740004800EB /* ViewController.h */,
 				3E61B3A31B461740004800EB /* ViewController.m */,
+				3E61B3C51B461F5E004800EB /* ZCAnnotation.h */,
+				3E61B3C61B461F5E004800EB /* ZCAnnotation.m */,
 				3E61B3A51B461740004800EB /* Main.storyboard */,
 				3E61B3A81B461740004800EB /* Images.xcassets */,
 				3E61B3AA1B461740004800EB /* LaunchScreen.xib */,
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E61B3A41B461740004800EB /* ViewController.m in Sources */,
+				3E61B3C71B461F5E004800EB /* ZCAnnotation.m in Sources */,
 				3E61B3A11B461740004800EB /* AppDelegate.m in Sources */,
 				3E61B39E1B461740004800EB /* main.m in Sources */,
 			);
@@ -344,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZCDrawLine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZCDrawLine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
